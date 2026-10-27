@@ -9,10 +9,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#fbfaf7; --fg:#1d2228; --muted:#5b6470; --line:#e4e1da; --accent:#1f5f8b; --chip:#eef3f7;
+--bg:#fbfaf7; --fg:#1d2228; --muted:#5b6470; --line:#e4e1da; --accent:#1f5f8b; --chip:#eef3f7;
 }
 @media (prefers-color-scheme: dark){
-  :root{ --bg:#14171b; --fg:#e7e9ec; --muted:#9aa3ad; --line:#2a2f36; --accent:#7fb6dc; --chip:#1c232b; }
+:root{ --bg:#14171b; --fg:#e7e9ec; --muted:#9aa3ad; --line:#2a2f36; --accent:#7fb6dc; --chip:#1c232b; }
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -31,9 +31,10 @@ h1{font-family:"Source Serif 4",serif;font-weight:600;font-size:clamp(32px,6vw,4
 .links a{border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:14px}
 section{padding:36px 0;border-top:1px solid var(--line)}
 h2{font-family:"Source Serif 4",serif;font-weight:600;font-size:26px;margin:0 0 18px}
+h3.sub{font-family:"Source Serif 4",serif;font-weight:600;font-size:20px;margin:28px 0 14px}
 .item{margin-bottom:18px}
 .item .t{font-weight:600}
-.item .m{color:var(--muted);font-size:14px}
+.item .m,.m{color:var(--muted);font-size:14px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{background:var(--chip);padding:4px 12px;border-radius:6px;font-size:14px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
@@ -47,72 +48,91 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:13px;border-top:1px soli
 </head>
 <body>
 <nav><div class="wrap">
-  <a class="name" href="#">Ece Çağlayan</a>
-  <a class="l" href="#research">Research</a>
-  <a class="l" href="#experience">Experience</a>
-  <a class="l" href="#publications">Publications</a>
-  <a class="l" href="#skills">Skills</a>
-  <a class="l" href="#contact">Contact</a>
+<a class="name" href="#">Ece Çağlayan</a>
+<a class="l" href="#research">Research</a>
+<a class="l" href="#experience">Experience</a>
+<a class="l" href="#publications">Publications</a>
+<a class="l" href="#teaching">Teaching</a>
+<a class="l" href="#skills">Skills</a>
+<a class="l" href="#contact">Contact</a>
 </div></nav>
 
 <div class="wrap">
 <header>
-  <h1>Ece Çağlayan, Ph.D.</h1>
-  <p class="role">Health Informatics &amp; Computational Neuroscience · Middle East Technical University, Ankara</p>
-  <p>I study how brain networks change in neurodegenerative and neuropsychiatric disorders, using EEG, MEG and fNIRS functional connectivity together with graph theory and machine learning. My background in computer engineering shapes how I work: I build reproducible analysis pipelines and use them to ask clinical questions about Alzheimer's disease, schizophrenia and gamma entrainment.</p>
-  <div class="links">
-    <a href="mailto:ececglyn@gmail.com">Email</a>
-    <a href="https://linkedin.com/in/ececglyn">LinkedIn</a>
-    <a href="https://github.com/ececaglyn">GitHub</a>
-    <a href="cv.pdf">CV (PDF)</a>
-  </div>
+<h1>Ece Çağlayan, Ph.D.</h1>
+<p class="role">Health Informatics &amp; Computational Neuroscience · Middle East Technical University, Ankara</p>
+<p>I study how brain networks change in neurodegenerative and neuropsychiatric disorders, using EEG, MEG and fNIRS functional connectivity together with graph theory and machine learning. My background in computer engineering shapes how I work: I build reproducible analysis pipelines and use them to ask clinical questions about Alzheimer's disease, schizophrenia and gamma entrainment.</p>
+<div class="links">
+<a href="mailto:ececglyn@gmail.com">Email</a>
+<a href="https://orcid.org/0000-0002-7560-5886">ORCID</a>
+<a href="https://linkedin.com/in/ececglyn">LinkedIn</a>
+<a href="https://github.com/ececaglyn">GitHub</a>
+<a href="cv.pdf">CV (PDF)</a>
+</div>
 </header>
 
 <section id="research">
-  <h2>Research</h2>
-  <div class="grid">
-    <div class="card"><h3>Gamma entrainment (GENUS)</h3><p>PI of a METU BAP project combining 40 Hz visual stimulation with a Go/No-Go task. EEG is collected from healthy young adults, healthy older adults and Alzheimer's patients.</p></div>
-    <div class="card"><h3>MEG in Alzheimer's disease</h3><p>Source-level MEG analysis of oscillations and multiscale scaling exponents related to cognitive decline (MANTA study, Amsterdam UMC).</p></div>
-    <div class="card"><h3>Connectivity in schizophrenia</h3><p>PhD work on N-Back functional connectivity across M1 receptor polymorphism groups, using PCC, WTC, MI, graph metrics and NBS-predict.</p></div>
-  </div>
+<h2>Research</h2>
+<div class="grid">
+<div class="card"><h3>Gamma entrainment (GENUS)</h3><p>PI of a funded METU BAP project combining 40 Hz visual stimulation with a Go/No-Go task. EEG will be recorded from healthy young adults, healthy older adults and Alzheimer's patients.</p></div>
+<div class="card"><h3>MEG in Alzheimer's disease</h3><p>Source-level MEG analysis of oscillations and multiscale scaling exponents related to cognitive decline (MANTA study, Amsterdam UMC).</p></div>
+<div class="card"><h3>Connectivity in schizophrenia</h3><p>PhD work on N-Back functional connectivity across M1 receptor polymorphism groups, using PCC, WTC, MI, graph metrics and NBS-predict.</p></div>
+</div>
 </section>
 
 <section id="experience">
-  <h2>Experience &amp; Education</h2>
-  <div class="item"><div class="t">Research Assistant, Department of Health Informatics, METU</div><div class="m">2015 to present · Instructor of "Python Programming for Data Analysis" (graduate, from Fall 2026)</div></div>
-  <div class="item"><div class="t">Visiting Researcher, Università degli Studi di Bari Aldo Moro, Italy</div><div class="m">Jul to Sep 2025 · Prof. Davide Rivolta &amp; Dr. Valerio Manippa · Gamma entrainment, tACS, EEG analysis</div></div>
-  <div class="item"><div class="t">Visiting Researcher, Alzheimer Center, Amsterdam UMC, Netherlands</div><div class="m">Mar to May 2025 · Dr. Willem de Haan &amp; Dr. Fernando Nobrega Santos · MANTA study, source-level MEG</div></div>
-  <div class="item"><div class="t">Visiting Researcher, KU Leuven, Belgium</div><div class="m">Jun to Sep 2024 · Prof. Marc Van Hulle · EEG connectivity in GENUS tasks</div></div>
-  <div class="item"><div class="t">Ph.D., Health Informatics, METU</div><div class="m">2017 to 2025 · Thesis: Brain Network Connectivity of the N-Back Task in Schizophrenia Groups According to M1 Receptor Polymorphism · Course Performance Award (2019)</div></div>
-  <div class="item"><div class="t">M.Sc., Health Informatics, METU</div><div class="m">2014 to 2017 · Classification of emotions in vocal responses</div></div>
-  <div class="item"><div class="t">B.Sc., Computer Engineering, Karadeniz Technical University</div><div class="m">2008 to 2013 · Erasmus exchange at TU Wien, Austria (2011 to 2012)</div></div>
+<h2>Experience &amp; Education</h2>
+<div class="item"><div class="t">Research Assistant, Department of Health Informatics, METU</div><div class="m">2015 to present · EEG/fNIRS analysis pipelines and graduate teaching support</div></div>
+<div class="item"><div class="t">Visiting Researcher, Università degli Studi di Bari Aldo Moro, Italy</div><div class="m">Jul to Sep 2025 · Prof. Davide Rivolta &amp; Dr. Valerio Manippa · Gamma entrainment, tACS, EEG analysis</div></div>
+<div class="item"><div class="t">Visiting Researcher, Alzheimer Center, Amsterdam UMC, Netherlands</div><div class="m">Mar to May 2025 · Dr. Willem de Haan &amp; Dr. Fernando Nobrega Santos · MANTA study, source-level MEG</div></div>
+<div class="item"><div class="t">Visiting Researcher, KU Leuven, Belgium</div><div class="m">Jun to Sep 2024 · Prof. Marc Van Hulle · EEG connectivity in GENUS tasks</div></div>
+<div class="item"><div class="t">Data Analyst, URAP (University Ranking by Academic Performance), METU</div><div class="m">2016 to present · Large-scale bibliometric data analysis</div></div>
+<div class="item"><div class="t">Ph.D., Health Informatics, METU</div><div class="m">2017 to 2025 · Thesis: Brain Network Connectivity of the N-Back Task in Schizophrenia Groups According to M1 Receptor Polymorphism · Advisor: Assoc. Prof. Murat Perit Çakır</div></div>
+<div class="item"><div class="t">M.Sc., Health Informatics, METU</div><div class="m">2014 to 2017 · Classification of emotions in vocal responses</div></div>
+<div class="item"><div class="t">B.Sc., Computer Engineering, Karadeniz Technical University</div><div class="m">2008 to 2013 · Erasmus exchange at TU Wien, Austria (2011 to 2012)</div></div>
 </section>
 
 <section id="publications">
-  <h2>Selected Publications</h2>
-  <p class="pub">Scaramuzzi, Scianatico, <b>Çağlayan</b>, Spina, Cornacchia, Taurisano, Rivolta &amp; Manippa (2026). Linking resting-state gamma oscillations to face-name associative memory. <em>Cognitive Neurodynamics</em>, 20, 169.</p>
-  <p class="pub"><b>Çağlayan</b>, Kır, Çakır &amp; Baskak (2025). Functional connectivity differences in schizophrenia groups characterized by M1 receptor polymorphism during the N-Back task, using fNIRS. <em>Psychiatry Research: Neuroimaging</em>.</p>
-  <p class="pub"><b>Çağlayan</b> &amp; Çağlayan (2026). J-MECS: a framework for journal selection and ethics alignment. <em>Orthopedic Surgery and Trauma</em>, 2(1), 35-55.</p>
-  <p class="pub">Çağlayan, <b>Çağlayan</b> &amp; Acartürk (2025). Stakeholder perspectives on higher education institution rankings: a structural equation modeling analysis. <em>Research in Higher Education</em>.</p>
-  <h2 style="font-size:20px;margin-top:28px">Conferences</h2>
-  <p class="pub"><b>Çağlayan</b>, Nobrega Santos &amp; de Haan (2026). Interdependent scaling exponents in resting-state MEG revealing multiscale alterations in Alzheimer's disease. <em>Bernstein Conference 2026</em>.</p>
-  <p class="pub"><b>Çağlayan</b>, Mlinarič &amp; Van Hulle (2026). Cognitive load shapes functional connectivity during 40-Hz gamma entrainment. <em>University of Cambridge Summer Program</em>.</p>
-  <p class="pub"><b>Çağlayan</b>, Nobrega Santos &amp; de Haan (2025). Interdependent scaling exponents in BNA-MEG data from the MANTA study. <em>METU Open Research Day</em>.<span class="tag">Best Poster Award</span></p>
+<h2>Publications</h2>
+<p class="pub">Scianatico, Scaramuzzi, <b>Çağlayan</b>, Spina, Cornacchia, Thoma, Taurisano, Rivolta &amp; Manippa (2026). Before the task begins: linking resting-state gamma oscillations to face-name associative memory. <em>Cognitive Neurodynamics</em>, 20, 169. <a href="https://doi.org/10.1007/s11571-026-10551-y">DOI</a></p>
+<p class="pub">Abanoz, Koyuncu Tunç, <b>Çağlayan</b>, et al. (2026). Bridging reproducibility and accessibility in EEG-based brain-computer interface research: a systematic mapping study. <em>Gazi Medical Journal</em>, 37(Congress1). In press.</p>
+<p class="pub"><b>Çağlayan</b> &amp; Çağlayan (2026). J-MECS: a framework for journal selection and ethics alignment across TR-Dizin, Web of Science, and Scopus. <em>Orthopedic Surgery and Trauma</em>, 2(1), 35-55. <a href="https://doi.org/10.14744/ortst.2026.06646">DOI</a></p>
+<p class="pub"><b>Çağlayan</b>, Kır, Çakır &amp; Baskak (2025). Analysis of functional connectivity differences in schizophrenia groups characterized by M1 receptor polymorphism during the N-Back task with fNIRS. <em>Psychiatry Research: Neuroimaging</em>, 112041. <a href="https://doi.org/10.1016/j.pscychresns.2025.112041">DOI</a></p>
+<p class="pub">Çağlayan, <b>Çağlayan</b> &amp; Acartürk (2025). Stakeholder perspectives on rankings of higher education institutions: a structural equation modeling analysis. <em>Research in Higher Education</em>. <a href="https://doi.org/10.1007/s11162-025-09838-6">DOI</a></p>
+
+<h3 class="sub">Conference proceedings</h3>
+<p class="pub">Acartürk, Çağlayan, <b>Çağlayan</b> &amp; Wilkosz (2026). A Neuro-Cyber Exploitation and Reconnaissance Taxonomy (NeuroCERT) for Human-Centric Cybersecurity. <em>Proceedings of NLPAICS 2026</em>, 143-155. <a href="https://aclanthology.org/2026.nlpaics-1.15/">ACL Anthology</a></p>
+<p class="pub">Abanoz, Koyuncu Tunç, <b>Çağlayan</b>, et al. (2026). EEG-Based Brain-Computer Interfaces (2011-2025): A Systematic Mapping of Paradigms, Devices, and Reproducibility Practices. <em>CECIIS 2026</em>.</p>
+<p class="pub"><b>Çağlayan</b> &amp; Özkurt (2015). Spectral features of heart rate variability obtained from a video camera. <em>SIU 2015</em>. <a href="https://doi.org/10.1109/SIU.2015.7129989">DOI</a></p>
+
+<h3 class="sub">Posters</h3>
+<p class="pub"><b>Çağlayan</b>, Nobrega Santos &amp; de Haan (2026). Interdependent Scaling Exponents in Resting-State MEG Reveal Multiscale Alterations in Alzheimer's Disease. <em>Bernstein Conference 2026</em>. <a href="https://abstracts.g-node.org/conference/BC26/abstracts#/uuid/17ac6ab8-1ca9-4fe8-bb7a-72273f273744">Abstract</a></p>
+<p class="pub"><b>Çağlayan</b>, Mlinarič &amp; Van Hulle (2026). Cognitive Load Shapes Functional Connectivity During 40-Hz Gamma Entrainment. <em>Summer Program on AI-Accelerated Neuroscience Discovery and Translation, University of Cambridge</em>.</p>
+<p class="pub"><b>Çağlayan</b>, Nobrega Santos &amp; de Haan (2025). Interdependent scaling exponents in BNA-MEG data from the MANTA study. <em>METU Open Research Day</em>.<span class="tag">Best Poster Award</span></p>
+<p class="pub"><b>Çağlayan</b>, Mlinarič &amp; Van Hulle (2024). Functional connectivity of neural entrainment in response to 40 Hz visual stimulation in humans. <em>SNUFA 2024</em>.</p>
+</section>
+
+<section id="teaching">
+<h2>Teaching</h2>
+<div class="item"><div class="t">Instructor, Python Programming for Data Analysis (graduate), METU</div><div class="m">Fall 2026 to present</div></div>
+<div class="item"><div class="t">Teaching Assistant, Medical Imaging and Signal Analysis (graduate), METU</div><div class="m">2015 to present</div></div>
+<div class="item"><div class="t">Instructor, Evaluation of Research Outcomes with Bibliometric Methods, METU Continuing Education Center</div><div class="m">2021 to 2024</div></div>
 </section>
 
 <section id="skills">
-  <h2>Skills</h2>
-  <div class="chips">
-    <span class="chip">EEG</span><span class="chip">MEG</span><span class="chip">fNIRS</span><span class="chip">Source analysis</span><span class="chip">Functional connectivity</span><span class="chip">Graph theory</span>
-    <span class="chip">Python</span><span class="chip">MATLAB</span><span class="chip">R</span><span class="chip">MNE-Python</span><span class="chip">FieldTrip</span><span class="chip">EEGLAB</span><span class="chip">NBS-predict</span><span class="chip">Deep learning</span><span class="chip">SVM</span>
-  </div>
-  <p style="margin-top:18px" class="m">Languages: Turkish (native), English (C1, IELTS 7.0), German (A1), Italian (beginner)</p>
-  <p class="m">Also: Rising Women Leaders in AI, Henley Business School &amp; Koç University (2026) · Data Analyst, URAP (2016 to present)</p>
+<h2>Skills</h2>
+<div class="chips">
+<span class="chip">EEG</span><span class="chip">MEG</span><span class="chip">fNIRS</span><span class="chip">Source analysis</span><span class="chip">Functional connectivity</span><span class="chip">Graph theory</span>
+<span class="chip">Python</span><span class="chip">MATLAB</span><span class="chip">R</span><span class="chip">SQL</span><span class="chip">MNE-Python</span><span class="chip">FieldTrip</span><span class="chip">EEGLAB</span><span class="chip">NBS-predict</span><span class="chip">Deep learning</span><span class="chip">SVM</span><span class="chip">SEM</span>
+</div>
+<p style="margin-top:18px" class="m">Languages: Turkish (native), English (C1, IELTS 7.0), German (A1), Italian (beginner)</p>
+<p class="m">Awards: Best Poster Award, METU Open Research Day (2025) · Course Performance Award, METU Graduate School of Informatics (2019)</p>
+<p class="m">Also: Rising Women Leaders in AI, Henley Business School &amp; Koç University (2026)</p>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <p>I am currently looking for postdoctoral positions abroad in EEG/MEG connectivity and neurodegeneration. Feel free to reach out at <a href="mailto:ececglyn@gmail.com">ececglyn@gmail.com</a>.</p>
+<h2>Contact</h2>
+<p>I am currently looking for postdoctoral positions abroad in EEG/MEG connectivity and neurodegeneration. Feel free to reach out at <a href="mailto:ececglyn@gmail.com">ececglyn@gmail.com</a>.</p>
 </section>
 </div>
 
